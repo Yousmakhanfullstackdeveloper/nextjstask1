@@ -1,0 +1,45 @@
+.navbar{
+    list-style: none;
+    background-color: aquamarine;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    padding: 5px;
+    height: 60px;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contactus{
+        color:black;
+        padding: 10px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 700px;
+        background-color: crimson;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        height: 80px;
+        width: 100%;
+        
+    }
+    .contactus::after{
+        content: "";
+        position:absolute;
+        display: block;
+        width: 0%;
+        align-items: center;
+        height: 10px;
+        background-color: black;
+        transition: 4s ease-in-out;
+    }
+    .contactus:hover::after{
+        content: "";
+        height:10px ;
+        width: 20%;
+        display: block;
+    }
